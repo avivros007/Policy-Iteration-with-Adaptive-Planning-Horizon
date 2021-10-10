@@ -1,0 +1,27 @@
+program: main_pi.py
+project: PI4applesRandomTransition30Overleaf
+method: grid
+metric:
+  goal: maximize
+  name: final_score
+parameters:
+  rows:
+    values: [30]
+  cols:
+    values: [30]
+  horz_wind_right:
+    values: [0.0]
+  horz_wind_left:
+    values: [0.0]
+  vert_wind_up:
+    values: [0.0]
+  vert_wind_down:
+    values: [0.0]
+  gamma:
+    values: [0.98]
+  planning_horizon:
+    values: [1,2,3,4,5,6,7,8,9,10]
+  seed:
+    values: [1,2,3,4,5,6,7,8,9,10]
+  agg_num:
+    values: [5]
