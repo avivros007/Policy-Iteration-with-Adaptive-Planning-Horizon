@@ -18,3 +18,4 @@ The options for planning horizons (through the "planning_horizon" parameter) are
 13. **"AppVstar:x,y,z,w" (str):** same as CON2q but distance is measured against the value from w iterations ago and not V*.
 14. **"Loc:x,y,z" (str):** same as CON2q but distance is not measured against V*, but instead against the optimal value in a smaller problem that aggregates every w\*w states together (w is set in the parameter "agg_num").
 15. **f(x,y,z,w) (function):** the planning horizon in each step is chosen by the functuion f with the parameters x - the step within the episode (only for finite-horizon and not discounted), y - the current state, z - the PI class instance (for implementation purposes), w - the current iteration.
+16. **VI:x (str):** run value iteration (and not policy iteration) with x-step lookahead.
